@@ -13,8 +13,10 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
 
-    when /^the home\s?page$/
-      '/'
+    when /^the home\s?page$/ then '/'
+    when /^(.*) state map page$/ then state_map_path($1)
+    when /^(.*) county map page$/ then '/state/CA/county/001'
+    when /^(.*) county map page$/ then '/state/UT/county/035'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
