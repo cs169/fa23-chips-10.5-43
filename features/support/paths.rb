@@ -15,8 +15,7 @@ module NavigationHelpers
 
     when /^the home\s?page$/ then '/'
     when /^(.*) state map page$/ then state_map_path($1)
-    when /^(.*) county map page$/ then '/state/CA/county/001'
-    when /^(.*) county map page$/ then '/state/UT/county/035'
+    when /^(.*) county map page$/ then search_representatives_path($1)
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
