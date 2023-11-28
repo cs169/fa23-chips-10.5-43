@@ -45,6 +45,12 @@ ActiveRecord::Schema.define(version: 2020_07_28_065604) do
 
   create_table "representatives", force: :cascade do |t|
     t.string "name"
+    t.string "party"
+    t.string "address_street"
+    t.string "address_city"
+    t.string "address_state"
+    t.string "address_zip"
+    t.string "photo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "ocdid"
