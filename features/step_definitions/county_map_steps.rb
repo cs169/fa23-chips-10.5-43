@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Scenario: Show representatives from different counties
 # Given /I am on (.+ state map page)/ do |page_name|
 #   visit path_to(page_name)

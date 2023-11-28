@@ -9,5 +9,4 @@ class RepresentativesController < ApplicationController
     # find rep by id
     @representative = Representative.find_by(id: params[:id])
   end
-
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Then('I should see {int} representatives in table') do |num|
   rows = page.all('table tbody tr').count
   expect(rows).to eq num
