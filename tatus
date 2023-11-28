@@ -1,0 +1,318 @@
+[33mcommit fbcd8f9e934b88856b860c47bda62d52992d96a7[m[33m ([m[1;36mHEAD -> [m[1;32mrep-profile-page[m[33m, [m[1;31morigin/rep-profile-page[m[33m)[m
+Merge: 8fbb86a 069f7cb
+Author: Basem Moustafa <bmoustafa@berkeley.edu>
+Date:   Tue Nov 28 06:35:08 2023 +0000
+
+    Merge branch 'master' of github.com:cs169/fa23-chips-10.5-43 into rep-profile-page
+
+[33mcommit 8fbb86aaf56b5d88c259a09a4b0571af1fee343b[m
+Author: Basem Moustafa <bmoustafa@berkeley.edu>
+Date:   Tue Nov 28 06:31:03 2023 +0000
+
+    fixed linter errors
+
+[33mcommit 069f7cbf6ef8d6e2a9ecf7134504551d351de5b4[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 0c27c08 9ef51e7
+Author: Daniel Delgado <98184054+dldelgad@users.noreply.github.com>
+Date:   Mon Nov 27 21:28:59 2023 -0800
+
+    Merge pull request #13 from cs169/coverage_dd
+    
+    Coverage dd
+
+[33mcommit 9ef51e7f7ec2fd5de597ab719474b27a7a603fea[m[33m ([m[1;31morigin/coverage_dd[m[33m)[m
+Merge: 574f325 0c27c08
+Author: Daniel Delgado <98184054+dldelgad@users.noreply.github.com>
+Date:   Mon Nov 27 21:27:22 2023 -0800
+
+    Merge branch 'master' into coverage_dd
+
+[33mcommit 0c27c08f1a1e877281d16b50a58b7e41e8dad64c[m
+Merge: 265580a 301a5fd
+Author: Cindy Li <cindy_li@berkeley.edu>
+Date:   Tue Nov 28 05:25:48 2023 +0000
+
+    Merge branch 'master' of github.com:cs169/fa23-chips-10.5-43
+
+[33mcommit 265580a3b4f8b5feb7a2d8a66e455ab2f5db5a5f[m[33m ([m[1;31morigin/coverage_cl[m[33m)[m
+Author: Cindy Li <cindy_li@berkeley.edu>
+Date:   Tue Nov 28 05:22:48 2023 +0000
+
+    coverage on event&newsitem models and event_controller
+
+[33mcommit 574f325f69775c5efda3fd368e5a30f6ee783b40[m
+Author: Daniel Delgado <dldelgad@berkeley.edu>
+Date:   Tue Nov 28 05:22:47 2023 +0000
+
+    Rubocop auto fixes
+
+[33mcommit 91d09296d739c97f3d315d45f0a4c0fc71b624b9[m
+Author: Daniel Delgado <dldelgad@berkeley.edu>
+Date:   Tue Nov 28 05:20:34 2023 +0000
+
+    Added tests for ajax and login controller
+
+[33mcommit e654764c6499458df4d6b0eac32f803bf6846fc6[m
+Author: Basem Moustafa <bmoustafa@berkeley.edu>
+Date:   Tue Nov 28 05:19:32 2023 +0000
+
+    1.2 updated show view in representatives and added links
+
+[33mcommit 3233ba3e0ab29cf4e16fbddc85a79df9478998dd[m
+Author: Daniel Delgado <dldelgad@berkeley.edu>
+Date:   Tue Nov 28 05:19:02 2023 +0000
+
+    Added user test
+
+[33mcommit 9b089ae8bc2f62b614101d34d730051ffa655c41[m
+Author: Basem Moustafa <bmoustafa@berkeley.edu>
+Date:   Tue Nov 28 05:18:36 2023 +0000
+
+    1.2 added more info to representative
+
+[33mcommit 7650dcc4d5c40835a70248ef2272af5594131e96[m
+Author: Daniel Delgado <dldelgad@berkeley.edu>
+Date:   Tue Nov 28 05:18:35 2023 +0000
+
+    Fixed yard warning
+
+[33mcommit 43fb271101a9210b5f109e581fa394cf642c576f[m
+Author: Basem Moustafa <bmoustafa@berkeley.edu>
+Date:   Tue Nov 28 05:17:13 2023 +0000
+
+    1.2 updated db and migrations
+
+[33mcommit 8d8a941f2d46b8757274d1c176efa3be4f04153e[m
+Merge: fda99bb 301a5fd
+Author: Basem Moustafa <bmoustafa@berkeley.edu>
+Date:   Tue Nov 28 02:56:54 2023 +0000
+
+    Merge branch 'master' of github.com:cs169/fa23-chips-10.5-43 into rep-profile-page
+
+[33mcommit 301a5fd133a158165a2b89abae94f6619170d062[m
+Author: Daniel Delgado <dldelgad@berkeley.edu>
+Date:   Tue Nov 28 02:55:53 2023 +0000
+
+    Bug fix for yarn
+
+[33mcommit 84d73303cca39791e1dc2d91b7958f3d1b854937[m
+Author: Daniel Delgado <dldelgad@berkeley.edu>
+Date:   Tue Nov 28 02:43:38 2023 +0000
+
+    county model test coverage
+
+[33mcommit 19a2cac2b7ee024e6490d6b545ce302f5c9515ed[m
+Author: Cooper Waite <cewaite@berkeley.edu>
+Date:   Tue Nov 28 02:33:58 2023 +0000
+
+    fixed API call
+
+[33mcommit 374b2ce813f904651cd1e3f1d8fdfe8ce79659f3[m
+Author: Cooper Waite <cewaite@berkeley.edu>
+Date:   Tue Nov 28 02:31:17 2023 +0000
+
+    fixed credentials
+
+[33mcommit 4d2d367e98797a29b33fb0a088e606c0e69e7a1c[m
+Merge: bc8a2d1 10ba23f
+Author: Cindy Li <76615721+cindyxli@users.noreply.github.com>
+Date:   Mon Nov 27 18:20:35 2023 -0800
+
+    Merge pull request #12 from cs169/counties_map_cl
+    
+    added feature step file, commented out to avoid regex conflict
+
+[33mcommit bc8a2d16354edb938305d9fb57ab4185bba035e9[m
+Merge: 70f4da0 ff1cb5d
+Author: Cooper Waite <70171720+cewaite@users.noreply.github.com>
+Date:   Mon Nov 27 18:12:45 2023 -0800
+
+    Merge pull request #11 from cs169/code-coverage
+    
+    map tests
+
+[33mcommit ff1cb5db02814a36425e71ccc3fcee1265b6b2f2[m
+Merge: 20e8de7 70f4da0
+Author: Cooper Waite <70171720+cewaite@users.noreply.github.com>
+Date:   Mon Nov 27 18:12:21 2023 -0800
+
+    Merge branch 'master' into code-coverage
+
+[33mcommit 20e8de7d440d2b5e7a7e2a8d8161901e285c0d39[m
+Author: Cooper Waite <cewaite@berkeley.edu>
+Date:   Tue Nov 28 02:10:03 2023 +0000
+
+    map tests
+
+[33mcommit 70f4da0b5cb8758ae07d15f95b6288ed6d9ed7cd[m
+Merge: 3ac96bd d622722
+Author: Daniel Delgado <98184054+dldelgad@users.noreply.github.com>
+Date:   Mon Nov 27 18:09:09 2023 -0800
+
+    Merge pull request #10 from cs169/counties_map
+    
+    Counties map
+
+[33mcommit d62272273e457662da7c12c3d458ee65511c397e[m[33m ([m[1;31morigin/counties_map[m[33m)[m
+Merge: 652026d 3ac96bd
+Author: Daniel Delgado <98184054+dldelgad@users.noreply.github.com>
+Date:   Mon Nov 27 18:08:46 2023 -0800
+
+    Merge branch 'master' into counties_map
+
+[33mcommit fda99bbbd31dc93be328a77d2515b33f83d25fa7[m
+Merge: 1bfe1e6 3ac96bd
+Author: Basem Moustafa <bmoustafa@berkeley.edu>
+Date:   Tue Nov 28 00:58:31 2023 +0000
+
+    Merge branch 'master' of github.com:cs169/fa23-chips-10.5-43 into rep-profile-page
+    updating
+
+[33mcommit 1bfe1e6aaef05944fe4eafee653ddfb47219620f[m
+Author: Basem Moustafa <bmoustafa@berkeley.edu>
+Date:   Mon Nov 27 03:57:00 2023 +0000
+
+    [feat] added #show controller method for representative
+
+[33mcommit a69e1cefea9da2ad913e27f7cb3bff7a99d6ed00[m
+Author: Basem Moustafa <bmoustafa@berkeley.edu>
+Date:   Mon Nov 27 03:29:49 2023 +0000
+
+    [feat] added show html file for representative view
+
+[33mcommit 3ac96bd365f4c217fe1e6eb140393580f0c29de6[m[33m ([m[1;32mcoverage[m[33m)[m
+Merge: ba26547 c7e3564
+Author: Cooper Waite <70171720+cewaite@users.noreply.github.com>
+Date:   Sun Nov 26 19:19:35 2023 -0800
+
+    Merge pull request #9 from cs169/refactoring-legacy-code
+    
+    Refactoring legacy code
+
+[33mcommit c7e35640297cb3000c7bb1528a9a7d27450b3b40[m
+Author: Cooper Waite <cewaite@berkeley.edu>
+Date:   Mon Nov 27 03:05:55 2023 +0000
+
+    refined test
+
+[33mcommit 10ba23f5a8ce11174a5fa19c3da32f325c75ed7d[m[33m ([m[1;31morigin/counties_map_cl[m[33m, [m[1;32mcounties_map_cl[m[33m)[m
+Author: Cindy Li <cindy_li@berkeley.edu>
+Date:   Sun Nov 26 07:53:41 2023 +0000
+
+    added feature step file, commented out to avoid regex conflict
+
+[33mcommit 652026d100aecd3ff46ba08d16ca533d5827d3ff[m
+Author: Daniel Delgado <dldelgad@berkeley.edu>
+Date:   Sun Nov 26 05:43:52 2023 +0000
+
+    Added google_api_key
+
+[33mcommit fa85dc3830ef6318766e01fd94560e79fd96f2ad[m
+Author: Daniel Delgado <dldelgad@berkeley.edu>
+Date:   Sat Nov 25 23:59:02 2023 +0000
+
+    Updated county map test
+
+[33mcommit 53cd98df2c62721b7c0f9391125012df7ef5b13e[m
+Author: Daniel Delgado <dldelgad@berkeley.edu>
+Date:   Sat Nov 25 22:40:01 2023 +0000
+
+    Fixed callback for county map
+
+[33mcommit 093d025f71ab34367d236d954ba81f9a5121c039[m
+Author: Daniel Delgado <dldelgad@berkeley.edu>
+Date:   Sat Nov 25 03:46:49 2023 +0000
+
+    Added cucumber test for counties map
+
+[33mcommit 05437c53d6a398f6c65c455b6a42b4601d406959[m[33m ([m[1;31morigin/refactoring-legacy-code[m[33m)[m
+Author: Cooper Waite <cewaite@berkeley.edu>
+Date:   Fri Nov 24 23:02:15 2023 +0000
+
+    cleaned up unused test, may need for code coverage later
+
+[33mcommit b10dd384a22b39e850dcfe5d602a561ca7d2875f[m
+Author: Cooper Waite <cewaite@berkeley.edu>
+Date:   Fri Nov 24 22:28:59 2023 +0000
+
+    1.1 fix and basic test
+
+[33mcommit ba2654769bee8954589494cb5a9455df4a209c2d[m
+Author: Cooper Waite <cewaite@berkeley.edu>
+Date:   Fri Nov 17 23:54:24 2023 +0000
+
+    fixing specs.yml
+
+[33mcommit 8bafb345f71e260f482cef0cf274d36857c4d783[m
+Merge: 3a6a461 de56f12
+Author: Cooper Waite <cewaite@berkeley.edu>
+Date:   Fri Nov 17 23:25:31 2023 +0000
+
+    fix merge conflicts with bluejay
+
+[33mcommit 3a6a46136b8da25ac8f09b0841ba9e7b69ec3fcc[m
+Author: Cooper Waite <cewaite@berkeley.edu>
+Date:   Fri Nov 17 23:23:57 2023 +0000
+
+    github actions
+
+[33mcommit de56f12809b8234fad7c29d0fd4c7a93356ed193[m
+Author: Cindy Li <76615721+cindyxli@users.noreply.github.com>
+Date:   Fri Nov 17 15:13:57 2023 -0800
+
+    Update README.md
+
+[33mcommit 1152c0e16201492f923b3c808bf71a7b5e6c1656[m[33m ([m[1;31morigin/cindyxli[m[33m)[m
+Author: Cindy Li <cindy_li@berkeley.edu>
+Date:   Fri Nov 17 23:05:01 2023 +0000
+
+    added valid info.yml
+
+[33mcommit d3f2e0bcc0de1590c61eca1ad3bf9194eec89bae[m
+Merge: cdc0cdd 8da6b96
+Author: Cindy Li <cindy_li@berkeley.edu>
+Date:   Fri Nov 17 22:56:41 2023 +0000
+
+    Merge branch 'master' into cindyxli
+
+[33mcommit 8da6b965787ea2f09cf73c08522117047296e269[m
+Author: Cooper Waite <cewaite@berkeley.edu>
+Date:   Fri Nov 17 22:52:58 2023 +0000
+
+    api creds
+
+[33mcommit cdc0cdde9e1680ac97cc6a76a5da76bea0e7c150[m
+Merge: 8377950 1a51389
+Author: Cindy Li <cindy_li@berkeley.edu>
+Date:   Fri Nov 17 22:02:05 2023 +0000
+
+    Merge branch 'master' into cindyxli
+    
+    initial merge
+
+[33mcommit 1a513899dee21f588ebed477697a017acaef4237[m
+Merge: 221492d 3b471a9
+Author: Cooper Waite <70171720+cewaite@users.noreply.github.com>
+Date:   Fri Nov 17 14:01:11 2023 -0800
+
+    Merge pull request #1 from cs169/cewaite
+    
+    master key file
+
+[33mcommit 8377950876c0cd5453d2e4eb6555818bbda6462b[m
+Author: Cindy Li <cindy_li@berkeley.edu>
+Date:   Fri Nov 17 21:50:55 2023 +0000
+
+    initial commit
+
+[33mcommit 3b471a906667230eb817352e1c781285c9d9dfcb[m[33m ([m[1;31morigin/cewaite[m[33m)[m
+Author: Cooper Waite <cewaite@berkeley.edu>
+Date:   Fri Nov 17 21:40:39 2023 +0000
+
+    master key file
+
+[33mcommit 221492d6d7fa058ec582b9d3c4a13037fd166dae[m[33m ([m[1;31morigin/dldelgad[m[33m)[m
+Author: Timothy J. Aveni <tja@berkeley.edu>
+Date:   Thu Nov 9 10:58:46 2023 -0800
+
+    Initial commit
