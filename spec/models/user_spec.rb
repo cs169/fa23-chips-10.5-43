@@ -5,7 +5,11 @@ require 'spec_helper'
 
 RSpec.describe User, type: :model do
   subject(:user) do
-    described_class.new
+    described_class.new(
+      first_name: 'Bill',
+      last_name:  'Gates',
+      provider:   'github'
+    )
   end
 
   it 'is valid with valid attributes' do
@@ -15,8 +19,10 @@ RSpec.describe User, type: :model do
   end
 
   it 'has name persistence' do
-    user.first_name = 'Bill'
-    user.last_name = 'Gates'
     expect(user.name).to eq('Bill Gates')
+  end
+
+  it 'returns auth provider' do
+    expect(user.auth_provider).to eq('Github')
   end
 end
