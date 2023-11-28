@@ -1,0 +1,20 @@
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4"> </div>
+    <div class="col-md-8">
+      <!-- Representative Information -->
+      <%= image_tag @representative.photo_url , alt: "Representative Photo", class: "img-fluid rounded" %>
+      <h1><%= @representative.name %></h1>
+      <h3><strong>Title:</strong> <%= @representative.title %></h3>
+      <p><strong>OCD ID:</strong> <%= @representative.ocdid %></p>
+      <p><strong>Contact Address:</strong></p>
+      <address>
+        <%= @representative.address_street %><br>
+        <%= @representative.address_city %>, <%= @representative.address_state %> <%= @representative.address_zip %>
+      </address>
+      <p><strong>Political Party: </strong> <%= @representative.party %></p>
+    </div>
+  </div>
+</div>
+
