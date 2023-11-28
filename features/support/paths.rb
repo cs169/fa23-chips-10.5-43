@@ -16,7 +16,7 @@ module NavigationHelpers
     when /^the home\s?page$/ then '/'
     when /^(.*) state map page$/ then state_map_path($1)
     when /^(.*) county map page$/ then search_representatives_path($1)
-    when /^(.) state map page$/ then state_map_path($1)
+    when /^the representatives page$/ then '/representatives'
 
     else
       begin
