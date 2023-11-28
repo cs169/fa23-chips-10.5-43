@@ -23,6 +23,8 @@ module NavigationHelpers
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
 
+    when /^the representatives page$/ then '/representatives'
+
     else
       begin
         page_name =~ /^the (.*) page$/
