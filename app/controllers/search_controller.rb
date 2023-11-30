@@ -5,7 +5,7 @@ require 'net/http'
 require 'uri'
 
 class SearchController < ApplicationController
-  def search
+  def search_representatives
     address = params[:address]
     service = Google::Apis::CivicinfoV2::CivicInfoService.new
     service.key = Rails.application.credentials[:GOOGLE_API_KEY]
@@ -16,7 +16,7 @@ class SearchController < ApplicationController
     render 'representatives/search'
   end
 
-  def search_representatives
+  def search_campaign_finances
     cycle = params[:cycle]
     category = params[:category]
 
@@ -32,9 +32,19 @@ class SearchController < ApplicationController
       http.request(request)
     end
 
-    @candidates = CampaignFinance.propublica_api_to_campaign_finances(response.body) #maybe just straight response?
-
+    @candidates = CampaignFinance.propublica_api_to_campaign_finances(JSON.parse(response.body)) #maybe just straight response?
+    @category_to_key = {
+                        "candidate-loan": "candidate_loans",
+                        "contribution-total": "total_contributions",
+                        "debts-owed": "debts_owed",
+                        "disbursements-total": "total_disbursements",
+                        "end-cash": "end_cash",
+                        "individual-total": "total_from_individuals",
+                        "pac-total": "total_from_pacs",
+                        "receipts-total": "total_receipts",
+                        "refund-total": "total_refunds"
+                        }
     # Change when CampaignFinance view has been added
-    # render 'representatives/search'
+    render 'campaign_finances/search'
   end
 end
