@@ -39,19 +39,18 @@ class MyNewsItemsController < SessionController
   end
 
   private
+
   def set_issues_list
-    @issues_list = ["", "Free Speech", "Immigration", "Terrorism", "Social Security and
-                    Medicare", "Abortion", "Student Loans", "Gun Control", "Unemployment",
-                    "Climate Change", "Homelessness", "Racism", "Tax Reform", "Net
-                    Neutrality", "Religious Freedom", "Border Security", "Minimum Wage",
-                    "Equal Pay"]
+    @issues_list = ['Free Speech', 'Immigration', 'Terrorism', "Social Security and
+                    Medicare", 'Abortion', 'Student Loans', 'Gun Control', 'Unemployment',
+                    'Climate Change', 'Homelessness', 'Racism', 'Tax Reform', "Net
+                    Neutrality", 'Religious Freedom', 'Border Security', 'Minimum Wage',
+                    'Equal Pay']
   end
 
-  def set_issue 
+  def set_issue
     # byebug
-    if params[:issue_id].nil?
-      params[:issue_id] = ""
-    end
+    params[:issue_id] = '' if params[:issue_id].nil?
     # byebug
     @issue = params[:issue_id]
   end

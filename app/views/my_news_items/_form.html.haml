@@ -30,9 +30,9 @@
             class: 'form-control'
     .form-group.row
         .col-sm-2
-            = label_tag :issue, 'Issue', class: 'col-form-label'
+            = label :news_item, :issue, class: 'col-form-label'
         .col-sm-10
-            = select_tag 'issue', options_for_select(issues_list),
+            = select :news_item, :issue, issues_list, { include_blank: true },
             class: 'form-control'
     .actions
         = f.submit 'Save', class: 'btn btn-primary'
