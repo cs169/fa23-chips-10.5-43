@@ -5,7 +5,7 @@ require 'net/http'
 require 'uri'
 
 class SearchController < ApplicationController
-  def search_representatives
+  def search
     address = params[:address]
     service = Google::Apis::CivicinfoV2::CivicInfoService.new
     service.key = Rails.application.credentials[:GOOGLE_API_KEY]
