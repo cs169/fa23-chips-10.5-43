@@ -17,6 +17,13 @@ module NavigationHelpers
     when /^(.*) state map page$/ then state_map_path($1)
     when /^(.*) county map page$/ then search_representatives_path($1)
     when /^the representatives page$/ then '/representatives'
+    when /^the news articles page$/ then '/representatives'
+
+    # when /^the news items page$/ then '/representatives/3/news_items'
+    when /^the campaign finance page$/ then search_campaign_finances_path()
+
+
+
 
     else
       begin

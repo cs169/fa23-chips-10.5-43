@@ -39,5 +39,13 @@ Rails.application.routes.draw do
         match '/representatives/:representative_id/my_news_item/:id', to:  'my_news_items#destroy',
                                                                       via: [:delete]
     end
-    get '/search/(:address)' => 'search#search', :as => 'search_representatives'
-end
+    # get '/search/(:address)' => 'search#search', :as => 'search_representatives'
+    get '/search-representatives/(:address)' => 'search#search_representatives', :as => 'search_representatives'
+
+    # Routes for CampaignFinance
+    resources :campaign_finances, only: [:index]
+    #get '/search/cycle/:cycle/category/:category' => 'campaign_finances#search_campaign_finances', :as => 'search_campaign_finances'
+    # get '/search/cycle/:cycle/category/:category' => 'campaign_finances#search', :as => 'search_campaign_finances'
+    get '/search-campaign_finances(/cycle/:cycle)(/category/:category)' => 'search#search_campaign_finances', :as => 'search_campaign_finances'
+
+  end

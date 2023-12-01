@@ -1,0 +1,23 @@
+.container-fluid
+    .row
+        .col-md-8.offset-md-2
+            .table-responsive-md.pt-5
+                %table.table.table-striped.table-hover#events
+                    %caption Top 20 Candidates For cycle #{params[:cycle]} and category #{params[:category]}
+                    %thead.thead-dark
+                        %tr
+                            %th Index
+                            %th Name
+                            %th Party
+                            %th State
+                            - category_value = params[:category]
+                            %th category_value
+                    %tbody
+                        - @candidates.each_with_index do |cand, index|
+                            %tr
+                                %td= index
+                                %td= cand['name']
+                                %td= cand['party']
+                                %td= cand['state'].split('/')[2].split('.')[0]
+                                -# assuming params[:category] not nil
+                                %td= cand[@category_to_key[category_value]]

@@ -64,7 +64,7 @@ exports.setupEventHandlers = (stateMap) => {
     };
     const clickCallback = (elem) => {
         const countyName = elem.attr('data-county-name');
-        window.location.href = `/search/${countyName}, ${stateMap.state.symbol}`;
+        window.location.href = `/search-representatives/${countyName}, ${stateMap.state.symbol}`;
     };
     mapUtils.handleMapMouseEvents(targets, hoverHtmlProvider, clickCallback);
 };
