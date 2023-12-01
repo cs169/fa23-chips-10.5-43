@@ -7,7 +7,7 @@
         -# sets default cycle and default category to first values
 
         - default_cycle = 2010
-        - default_category = "candidate-loan"
+        - default_category = 'candidate-loan'
 
         = form_tag search_campaign_finances_path, method: :get do
             .form-group.row
@@ -16,13 +16,17 @@
                         Select cycle:
                 .col-md-6
                     - cycle_options = (2010..2020).select { |num| num.even? }
-                    = select_tag(:cycle, options_for_select(cycle_options, selected: default_cycle), class: 'form-control')  
+                    = select_tag(:cycle, options_for_select(cycle_options, selected: default_cycle), 
+                    class: 'form-control')
                 .col-md-4
                     %label.col-form-label
                         Select category:
                 .col-md-6
-                    - category_options = ["candidate-loan", "contribution-total", "debts-owed", "disbursements-total", "end-cash", "individual-total", "pac-total", "receipts-total", "refund-total"]
-                    = select_tag(:category, options_for_select(category_options, selected: default_category), class: 'form-control')
+                    - category_options = ["candidate-loan", "contribution-total", "debts-owed", 
+                    "disbursements-total", "end-cash", "individual-total", "pac-total", 
+                    "receipts-total", "refund-total"]
+                    = select_tag(:category, options_for_select(category_options, 
+                    selected: default_category), class: 'form-control')
 
             .actions
                 = submit_tag 'Search', class: 'btn btn-primary'

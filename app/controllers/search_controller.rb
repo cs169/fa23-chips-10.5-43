@@ -17,34 +17,31 @@ class SearchController < ApplicationController
   end
 
   def search_campaign_finances
+    response = search_campaign_finances_helper
+    @candidates = CampaignFinance.propublica_api_to_campaign_finances(JSON.parse(response.body))
+    @category_to_key = {
+      'candidate-loan':      'candidate_loans',
+      'contribution-total':  'total_contributions',
+      'debts-owed':          'debts_owed',
+      'disbursements-total': 'total_disbursements',
+      'end-cash':            'end_cash',
+      'individual-total':    'total_from_individuals',
+      'pac-total':           'total_from_pacs',
+      'receipts-total':      'total_receipts',
+      'refund-total':        'total_refunds'
+    }
+    render 'campaign_finances/search'
+  end
+
+  def search_campaign_finances_helper
     cycle = params[:cycle]
     category = params[:category]
-
     uri = URI.parse("https://api.propublica.org/campaign-finance/v1/#{cycle}/candidates/leaders/#{category}.json")
     request = Net::HTTP::Get.new(uri)
-    request["X-Api-Key"] = Rails.application.credentials[:PROPUBLICA_API_KEY]
-
-    req_options = {
-      use_ssl: uri.scheme == "https",
-    }
-
-    response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
+    request['X-Api-Key'] = Rails.application.credentials[:PROPUBLICA_API_KEY]
+    req_options = { use_ssl: uri.scheme == 'https' }
+    Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
       http.request(request)
     end
-
-    @candidates = CampaignFinance.propublica_api_to_campaign_finances(JSON.parse(response.body)) #maybe just straight response?
-    @category_to_key = {
-                        "candidate-loan": "candidate_loans",
-                        "contribution-total": "total_contributions",
-                        "debts-owed": "debts_owed",
-                        "disbursements-total": "total_disbursements",
-                        "end-cash": "end_cash",
-                        "individual-total": "total_from_individuals",
-                        "pac-total": "total_from_pacs",
-                        "receipts-total": "total_receipts",
-                        "refund-total": "total_refunds"
-                        }
-    # Change when CampaignFinance view has been added
-    render 'campaign_finances/search'
   end
 end
