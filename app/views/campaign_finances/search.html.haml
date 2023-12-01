@@ -11,15 +11,13 @@
                             %th Party
                             %th State
                             - category_value = params[:category]
-                            %th #{category_value}
+                            %th category_value
                     %tbody
-                        - @candidates.each_with_index do |cand, _index|
+                        - @candidates.each_with_index do |cand, index|
                             %tr
-                                %td= _index
-                                %td= cand["name"]
-                                %td= cand["party"]
-                                %td= cand["state"].split('/')[2].split('.')[0]
+                                %td= index
+                                %td= cand['name']
+                                %td= cand['party']
+                                %td= cand['state'].split('/')[2].split('.')[0]
                                 -# assuming params[:category] not nil
                                 %td= cand[@category_to_key[category_value]]
-
-                        

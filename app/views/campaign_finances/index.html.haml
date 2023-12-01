@@ -15,17 +15,15 @@
                     %label.col-form-label
                         Select cycle:
                 .col-md-6
-                    - cycle_options = (2010..2020).select { |num| num.even? }
-                    = select_tag(:cycle, options_for_select(cycle_options, selected: default_cycle), 
+                    - cycle_options = (2010..2020).select(&:even?)
+                    = select_tag(:cycle, options_for_select(cycle_options, selected: default_cycle),
                     class: 'form-control')
                 .col-md-4
                     %label.col-form-label
                         Select category:
                 .col-md-6
-                    - category_options = ["candidate-loan", "contribution-total", "debts-owed", 
-                    "disbursements-total", "end-cash", "individual-total", "pac-total", 
-                    "receipts-total", "refund-total"]
-                    = select_tag(:category, options_for_select(category_options, 
+                    - category_options = @categories_list
+                    = select_tag(:category, options_for_select(category_options,
                     selected: default_category), class: 'form-control')
 
             .actions
