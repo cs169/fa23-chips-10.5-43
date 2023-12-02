@@ -49,9 +49,7 @@ class MyNewsItemsController < SessionController
   end
 
   def set_issue
-    # byebug
     params[:issue_id] = '' if params[:issue_id].nil?
-    # byebug
     @issue = params[:issue_id]
   end
 

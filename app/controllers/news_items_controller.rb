@@ -5,7 +5,6 @@ class NewsItemsController < ApplicationController
   before_action :set_news_item, only: %i[show]
 
   def index
-    # byebug
     @news_items = @representative.news_items
   end
 
